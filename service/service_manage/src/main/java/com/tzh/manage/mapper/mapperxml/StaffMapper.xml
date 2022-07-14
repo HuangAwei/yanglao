@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tzh.manage.mapper.StaffMapper">
+  <resultMap id="BaseResultMap" type="com.tzh.manage.entity.Staff">
+    <!--@mbg.generated-->
+    <!--@Table t_staff-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="id_number" jdbcType="CHAR" property="idNumber" />
+    <result column="date_birth" jdbcType="DATE" property="dateBirth" />
+    <result column="gender" jdbcType="CHAR" property="gender" />
+    <result column="date_entry" jdbcType="DATE" property="dateEntry" />
+    <result column="department" jdbcType="INTEGER" property="department" />
+    <result column="position" jdbcType="INTEGER" property="position" />
+    <result column="telephone_number" jdbcType="CHAR" property="telephoneNumber" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, id_number, date_birth, gender, date_entry, department, `position`, telephone_number, 
+    note
+  </sql>
+</mapper>
